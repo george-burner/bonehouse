@@ -4,15 +4,12 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    const SITES = [
-      "https://example.com",
-      "https://wikipedia.org",
-      "https://news.ycombinator.com",
-      "https://mozilla.org",
-      "https://github.com",
-      "https://reddit.com"
-    ];
-    location.href = SITES[Math.floor(Math.random() * SITES.length)];
+    var seed = Math.random();
+    if (seed < 0.5) location.href = "https://www.instagram.com/bonehouseeats/";
+    if (seed < 0.6) location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    if (seed < 0.75) location.href = "https://www.youtube.com/watch?v=9lOgeGxborU&t=24s"
+    location.href = "https://www.youtube.com/watch?v=HqGsT6VM8Vg&t=4s"
+    
   </script>
 </head>
 <body></body>
